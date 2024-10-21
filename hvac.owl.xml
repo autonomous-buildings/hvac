@@ -1,0 +1,382 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ramanatg/ontologies/2024/5/untitled-ontology-42/"
+     xml:base="http://www.semanticweb.org/ramanatg/ontologies/2024/5/untitled-ontology-42/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.w3id.org/hvac"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3id.org/hvac#fedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/hvac#fedBy"/>
+    
+
+
+    <!-- http://www.w3id.org/hvac#feeds -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/hvac#feeds"/>
+    
+
+
+    <!-- http://www.w3id.org/hvac#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/hvac#hasPart"/>
+    
+
+
+    <!-- http://www.w3id.org/hvac#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/hvac#partOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3id.org/hvac#hasMaximumValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/hvac#hasMaximumValue"/>
+    
+
+
+    <!-- http://www.w3id.org/hvac#hasMinimumValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/hvac#hasMinimumValue"/>
+    
+
+
+    <!-- http://www.w3id.org/hvac#hasNominalValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/hvac#hasNominalValue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3id.org/hvac#AirCooledChiller -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#AirCooledChiller">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#ChillingSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#AirCooledCondensor -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#AirCooledCondensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#Condensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#AirHeatExchanger -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#AirHeatExchanger">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#AirsideComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#AirhandlingSystem -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#AirhandlingSystem">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#AirsideComponent -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#AirsideComponent">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#AxialFan -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#AxialFan">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#Fan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#CentrifugalCompressor -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#CentrifugalCompressor">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#RefrigerantCompressor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#CentrifugalFan -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#CentrifugalFan">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#Fan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#ChillingSystem -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#ChillingSystem">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#Component -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#Component"/>
+    
+
+
+    <!-- http://www.w3id.org/hvac#Condensor -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#Condensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#RefrigerationComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#CoolingCoil -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#CoolingCoil">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#AirHeatExchanger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#Damper -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#Damper">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#AirsideComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#DirectExcchangeEvaporator -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#DirectExcchangeEvaporator">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#Evaporator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#DivertingValve -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#DivertingValve">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#ThreeWayValve"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#Evaporator -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#Evaporator">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#RefrigerationComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#ExpansionValve -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#ExpansionValve">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#RefrigerationComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#Fan -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#Fan">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#AirsideComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#Filter -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#Filter">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#AirsideComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#HeatingCoil -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#HeatingCoil">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#AirHeatExchanger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#HeatingSystem -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#HeatingSystem">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#MixingValve -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#MixingValve">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#ThreeWayValve"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#Pump -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#Pump">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#WatersideComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#ReciprocatingCompressor -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#ReciprocatingCompressor">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#RefrigerantCompressor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#RefrigerantCompressor -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#RefrigerantCompressor">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#RefrigerationComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#RefrigerationComponent -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#RefrigerationComponent">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#ScrewCompressor -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#ScrewCompressor">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#RefrigerantCompressor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#ShutoffDamper -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#ShutoffDamper">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#Damper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#System -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#System"/>
+    
+
+
+    <!-- http://www.w3id.org/hvac#ThreeWayValve -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#ThreeWayValve">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#Valve"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#TwoWayValve -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#TwoWayValve">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#Valve"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#Valve -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#Valve">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#WatersideComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#VentilationSystem -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#VentilationSystem">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#VolumeControlDamper -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#VolumeControlDamper">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#Damper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#WaterCooledChiller -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#WaterCooledChiller">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#ChillingSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#WaterCooledCondensor -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#WaterCooledCondensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#Condensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3id.org/hvac#WatersideComponent -->
+
+    <owl:Class rdf:about="http://www.w3id.org/hvac#WatersideComponent">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/hvac#Component"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
